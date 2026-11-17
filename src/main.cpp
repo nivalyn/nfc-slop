@@ -50,7 +50,7 @@ uint8_t oledAddress = 0;
 // Step 3: Copy the UID exactly as printed (uppercase, no spaces) into this list.
 // Multiple authorized UIDs can be placed on separate lines, comma-separated.
 const char* authorizedUIDs[] = {
-  "D1285D68"
+  "CD16B002"
   // Example only: "04A1B2C3D4"
 };
 const size_t authorizedCardCount =
@@ -121,7 +121,7 @@ void showCardResult(const String& uid, bool authorized) {
   display.setCursor(0, 43);
   display.print("STATUS: ");
   display.setCursor(0, 54);
-  display.println(authorized ? "ACCESS GRANTED" : "ACCESS DENIED");
+  display.println(authorized ? "Slowly stepbro " : "Fuck You ");
   display.display();
 }
 
